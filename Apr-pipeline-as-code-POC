@@ -1,0 +1,26 @@
+{
+	"name": "pipelineascode",
+	"group": "POC",
+	"enable_pipeline_locking": true,
+	"environment_variables": [],
+	"materials": [{
+		"url": "https://github.com/aprasen.git",
+		"type": "git",
+		"name": "mygit"
+	}],
+	"stages": [{
+		"name": "Stage-1",
+		"jobs": [{
+			"name": "Job-1",
+			"resources": ["ip-10-0-4-33"],
+			"tasks": [{
+				"type": "exec",
+				"run_if": "passed",
+				"on_cancel" : null,
+				"command": "echo",
+				"arguments": ["Apratim"],
+				"working_directory": null
+			}]
+		}]
+	}]
+}
