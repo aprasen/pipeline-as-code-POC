@@ -1,5 +1,5 @@
 {
-	"name": "pipelineascode",
+	"name": "AprPipelineAsCode",
 	"group": "POC",
 	"enable_pipeline_locking": true,
 	"environment_variables": [],
